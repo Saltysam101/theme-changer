@@ -45,8 +45,8 @@
 
   }
   img{
-      height: 30%;
-      width: 25%;
+      height: 20%;
+      width: 15%;
   }
   .dropdown{
       position: absolute;
@@ -79,6 +79,7 @@
       display: inline-block;
       vertical-align: middle;
       margin-right: 10px;
+      color: var(--bg);
   }
   :root{
       --gray0: #f8f8f8;
@@ -102,6 +103,9 @@
       
 
   }
+  #light::before{
+      background: #f8f8f8;
+  }
   .dark{
     --bg: var(--gray5);
     --bg-nav: linear-gradient(to right, var(--gray3), var(--gray6));
@@ -109,6 +113,9 @@
     --text: var(--gray0);
     --border-color: var(--purple);
 
+  }
+  #dark::before{
+      background: #12181b;
   }
   @keyframes color-rotate{
       from{
